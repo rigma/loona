@@ -2,7 +2,7 @@
 //! strings, under the Huffman code defined by HPACK.
 //! (HPACK-draft-10, Appendix B)
 
-use std::collections::HashMap;
+use ahash::{HashMap, HashMapExt};
 
 /// Represents a symbol that can be inserted into a Huffman-encoded octet
 /// string.
